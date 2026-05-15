@@ -1,0 +1,22 @@
+.env
+backend/.env
+node_modules/
+
+# Environnement
+.env
+**/.env
+
+# Dépendances
+node_modules/
+**/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.dbnode_modules/ 
+backend/node_modules/ 
+.env 
+backend/.env 

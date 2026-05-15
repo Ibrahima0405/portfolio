@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio d'Ibrahima Diop — Développeur Fullstack basé à Dakar, Sénégal. React Native, Node.js, MySQL." />
+  <meta property="og:title" content="Ibrahima Diop — Développeur Fullstack" />
+  <meta property="og:description" content="Applications mobiles et web pour le marché africain et international." />
+  <meta name="theme-color" content="#051424" />
+  <title>Ibrahima Diop — Développeur Fullstack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">I<span>.</span>Diop</a>
+    <ul class="nav-links">
+      <li><a href="#skills">compétences</a></li>
+      <li><a href="#projects">projets</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-glow g1"></div>
+    <div class="hero-bg-glow g2"></div>
+
+    <div class="hero-content">
+      <div class="badge-disponible">
+        <span class="pulse"></span>
+        Disponible pour de nouveaux projets
+      </div>
+
+      <h1 class="hero-name">
+        Ibrahima<br>
+        <span class="hl">Diop</span>
+      </h1>
+
+      <p class="hero-subtitle">Développeur Fullstack</p>
+
+      <p class="hero-desc">
+        Je conçois et développe des applications mobiles et web performantes —
+        du backend à l'interface — avec une attention particulière au contexte
+        africain et aux marchés internationaux.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
+        <a href="#contact"  class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       COMPÉTENCES
+  ═══════════════════════════════════════ -->
+  <section id="skills">
+    <p class="section-label reveal">// stack technique</p>
+    <h2 class="section-title reveal">Ce que je maîtrise</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <p class="skill-num">01 · MOBILE</p>
+        <h3 class="skill-name">React Native</h3>
+        <p class="skill-desc">Applications iOS &amp; Android avec Expo, navigation fluide, stockage sécurisé et intégrations API.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <p class="skill-num">02 · BACKEND</p>
+        <h3 class="skill-name">Node.js / Express</h3>
+        <p class="skill-desc">APIs REST robustes, authentification JWT, middlewares et gestion des erreurs en production.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <p class="skill-num">03 · FRONTEND</p>
+        <h3 class="skill-name">React.js</h3>
+        <p class="skill-desc">Interfaces dynamiques, composants réutilisables et gestion d'état avec hooks.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <p class="skill-num">04 · BASE DE DONNÉES</p>
+        <h3 class="skill-name">MySQL</h3>
+        <p class="skill-desc">Modélisation relationnelle, requêtes optimisées, migrations et gestion des transactions.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <p class="skill-num">05 · GÉOLOCALISATION</p>
+        <h3 class="skill-name">Google Maps API</h3>
+        <p class="skill-desc">Géocodage, calcul d'itinéraires, cartes interactives et suivi GPS en temps réel.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <p class="skill-num">06 · DÉPLOIEMENT</p>
+        <h3 class="skill-name">Cloud / Render</h3>
+        <p class="skill-desc">Déploiement backend, variables d'environnement, gestion du cycle de vie en production.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROJETS (chargés depuis l'API)
+  ═══════════════════════════════════════ -->
+  <section id="projects">
+    <p class="section-label reveal">// réalisations</p>
+    <h2 class="section-title reveal">Mes projets</h2>
+
+    <!-- Rempli dynamiquement par main.js -->
+    <div id="projects-container">
+      <div class="projects-loading">
+        <div class="spinner"></div>
+        <span>Chargement...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="contact">
+    <p class="section-label reveal">// disponible</p>
+    <h2 class="section-title reveal">Travaillons ensemble</h2>
+
+    <div class="contact-grid">
+
+      <!-- Infos de contact -->
+      <div class="contact-info reveal">
+        <h3>Parlons de ton projet</h3>
+        <p>
+          Développeur fullstack basé à Dakar, ouvert aux missions freelance
+          locales et internationales. Je réponds généralement sous 24h.
+        </p>
+
+        <ul class="contact-links-list">
+          <li>
+            <a href="mailto:diopi6974@gmail.com" class="contact-link-item">
+              <span class="icon">✉</span>
+              diopi6974@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/ibrahima-diop" target="_blank" rel="noopener" class="contact-link-item">
+              <span class="icon">in</span>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ibrahima0405" target="_blank" rel="noopener" class="contact-link-item">
+              <span class="icon">⌥</span>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ibrahima__laye" target="_blank" rel="noopener" class="contact-link-item">
+              <span class="icon">f</span>
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="reveal">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" placeholder="nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="exemple@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="sujet">Sujet</label>
+            <input type="text" id="sujet" name="sujet" placeholder="Mission freelance / Collaboration / Question" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décris-moi ton projet..." required></textarea>
+          </div>
+
+          <div id="form-feedback" class="form-feedback"></div>
+
+          <button type="submit" class="btn btn-submit">Envoyer le message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <span>© 2026 Ibrahima Diop · Dakar, Sénégal</span>
+    <span>Fullstack Developer</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
